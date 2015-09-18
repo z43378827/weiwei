@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WGTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSLog(@"%lf",[UIScreen mainScreen].bounds.size.height);
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+        
+    WGTabBarController * tabBarCtrl = [[WGTabBarController alloc]init];
+    
+    
+    
+    
+    
+    //设置根控制器
+    [self.window setRootViewController:tabBarCtrl];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+    
+    
+    
+}
+
+
+- (void)addChildViewController:ctrl title:(NSString * )title {
+    UIViewController * vc = [[UIViewController alloc]init];
+    vc.tabBarItem.title = title;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
