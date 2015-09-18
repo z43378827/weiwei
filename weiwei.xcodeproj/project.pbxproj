@@ -12,8 +12,10 @@
 		3A0DC2B11BABC26100E5B0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DC2B01BABC26100E5B0A8 /* ViewController.m */; };
 		3A0DC2B41BABC26100E5B0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DC2B21BABC26100E5B0A8 /* Main.storyboard */; };
 		3A0DC2B61BABC26100E5B0A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DC2B51BABC26100E5B0A8 /* Images.xcassets */; };
-		3A0DC2B91BABC26100E5B0A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DC2B71BABC26100E5B0A8 /* LaunchScreen.xib */; };
 		3A0DC2C51BABC26100E5B0A8 /* weiweiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DC2C41BABC26100E5B0A8 /* weiweiTests.m */; };
+		3A0DC2D01BAC2E0A00E5B0A8 /* WGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DC2CF1BAC2E0A00E5B0A8 /* WGTabBarController.m */; };
+		3A0DC2D31BAC6B1D00E5B0A8 /* WGtabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DC2D21BAC6B1D00E5B0A8 /* WGtabBar.m */; };
+		3A0DC2D71BAC6E3E00E5B0A8 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DC2D61BAC6E3E00E5B0A8 /* UIView+extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,15 @@
 		3A0DC2B01BABC26100E5B0A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A0DC2B31BABC26100E5B0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A0DC2B51BABC26100E5B0A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3A0DC2B81BABC26100E5B0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3A0DC2BE1BABC26100E5B0A8 /* weiweiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiweiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0DC2C31BABC26100E5B0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0DC2C41BABC26100E5B0A8 /* weiweiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiweiTests.m; sourceTree = "<group>"; };
+		3A0DC2CE1BAC2E0A00E5B0A8 /* WGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGTabBarController.h; sourceTree = "<group>"; };
+		3A0DC2CF1BAC2E0A00E5B0A8 /* WGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGTabBarController.m; sourceTree = "<group>"; };
+		3A0DC2D11BAC6B1D00E5B0A8 /* WGtabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGtabBar.h; sourceTree = "<group>"; };
+		3A0DC2D21BAC6B1D00E5B0A8 /* WGtabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGtabBar.m; sourceTree = "<group>"; };
+		3A0DC2D51BAC6E3E00E5B0A8 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		3A0DC2D61BAC6E3E00E5B0A8 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +88,17 @@
 		3A0DC2A71BABC26100E5B0A8 /* weiwei */ = {
 			isa = PBXGroup;
 			children = (
+				3A0DC2D41BAC6E3000E5B0A8 /* 分类 */,
 				3A0DC2AC1BABC26100E5B0A8 /* AppDelegate.h */,
 				3A0DC2AD1BABC26100E5B0A8 /* AppDelegate.m */,
+				3A0DC2CE1BAC2E0A00E5B0A8 /* WGTabBarController.h */,
+				3A0DC2CF1BAC2E0A00E5B0A8 /* WGTabBarController.m */,
+				3A0DC2D11BAC6B1D00E5B0A8 /* WGtabBar.h */,
+				3A0DC2D21BAC6B1D00E5B0A8 /* WGtabBar.m */,
 				3A0DC2AF1BABC26100E5B0A8 /* ViewController.h */,
 				3A0DC2B01BABC26100E5B0A8 /* ViewController.m */,
 				3A0DC2B21BABC26100E5B0A8 /* Main.storyboard */,
 				3A0DC2B51BABC26100E5B0A8 /* Images.xcassets */,
-				3A0DC2B71BABC26100E5B0A8 /* LaunchScreen.xib */,
 				3A0DC2A81BABC26100E5B0A8 /* Supporting Files */,
 			);
 			path = weiwei;
@@ -117,6 +128,15 @@
 				3A0DC2C31BABC26100E5B0A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A0DC2D41BAC6E3000E5B0A8 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				3A0DC2D51BAC6E3E00E5B0A8 /* UIView+extension.h */,
+				3A0DC2D61BAC6E3E00E5B0A8 /* UIView+extension.m */,
+			);
+			name = "分类";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +183,7 @@
 		3A0DC29D1BABC26100E5B0A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WG;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = GENG;
 				TargetAttributes = {
@@ -200,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0DC2B41BABC26100E5B0A8 /* Main.storyboard in Resources */,
-				3A0DC2B91BABC26100E5B0A8 /* LaunchScreen.xib in Resources */,
 				3A0DC2B61BABC26100E5B0A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0DC2B11BABC26100E5B0A8 /* ViewController.m in Sources */,
+				3A0DC2D01BAC2E0A00E5B0A8 /* WGTabBarController.m in Sources */,
+				3A0DC2D71BAC6E3E00E5B0A8 /* UIView+extension.m in Sources */,
+				3A0DC2D31BAC6B1D00E5B0A8 /* WGtabBar.m in Sources */,
 				3A0DC2AE1BABC26100E5B0A8 /* AppDelegate.m in Sources */,
 				3A0DC2AB1BABC26100E5B0A8 /* main.m in Sources */,
 			);
@@ -250,14 +273,6 @@
 				3A0DC2B31BABC26100E5B0A8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A0DC2B71BABC26100E5B0A8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A0DC2B81BABC26100E5B0A8 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +362,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weiwei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +374,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weiwei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +435,7 @@
 				3A0DC2CA1BABC26100E5B0A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A0DC2CB1BABC26100E5B0A8 /* Build configuration list for PBXNativeTarget "weiweiTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +444,7 @@
 				3A0DC2CD1BABC26100E5B0A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
