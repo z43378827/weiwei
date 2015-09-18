@@ -99,6 +99,7 @@
 
 - (void)pushCtrl:(UIButton *)plusBtn{
     NSLog(@"plusButtonClick");
+    //到控制器里写逻辑
     if ([self.delegate respondsToSelector:@selector(tabBar:plusButton:)]) {
         [self.delegate tabBar:self plusButton:plusBtn];
     }
