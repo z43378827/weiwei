@@ -8,6 +8,7 @@
 
 #import "WGTabBarController.h"
 #import "WGtabBar.h"
+#import "WGHomeVCtrl.h"
 
 @interface WGTabBarController ()<WGtabBarDelegate>
 
@@ -26,7 +27,7 @@
     //通过kvc 来添加只读的按钮
     [self setValue:tabBar forKeyPath:@"tabBar"];
 
-    UIViewController * homeCtrl =[[UIViewController alloc]init];
+    WGHomeVCtrl * homeCtrl =[[WGHomeVCtrl alloc]init];
     [self addChildViewControllerWithTitle:@"首页" mage:@"tabbar_home" ctrl:homeCtrl];
     
     UIViewController *messageCtrl  =[[UIViewController alloc]init];
@@ -41,14 +42,18 @@
 }
 //设置添加控制器的方法
 
+
 - (void)addChildViewControllerWithTitle:(NSString *)title mage:(NSString *)imageName ctrl:(UIViewController *)ctrl{
     
     ctrl.view.backgroundColor =[UIColor whiteColor];
     
     //设置图片的偏移可以调整距离.
-    ctrl.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+   // ctrl.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
    
-    ctrl.tabBarItem.title = title;
+    //设置tabbar和导航 的title的文字
+//    ctrl.tabBarItem.title = title;
+//    ctrl.navigationController.title = title;
+    ctrl.title = title;
     
     //初始化文字属性  ,设置文字的前景色为橙色
     NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
@@ -61,11 +66,14 @@
     
     //解决图片变蓝的问题,设置渲染是默认的.
     UIImage * oriqinalImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",imageName]];
-    
+
     ctrl.tabBarItem.selectedImage = [oriqinalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
    
+    //添加导航控制器
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:ctrl];
     
-    [self addChildViewController:ctrl];
+    
+    [self addChildViewController:nav];
     
     
     
